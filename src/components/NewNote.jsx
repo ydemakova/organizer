@@ -26,8 +26,22 @@ function NewNote(props) {
 
 	return (
 		<form action="">
-			<input onChange={handleChange} type="text" name="title" placeholder="Title" value={newNote.title} />
-			<input onChange={handleChange} type="text" name="text" placeholder="Take a note" value={newNote.text} />
+			<input
+				onChange={handleChange}
+				type="text"
+				name="title"
+				placeholder="Title"
+				value={newNote.title}
+				autocomplete="false"
+			/>
+			<input
+				onChange={handleChange}
+				type="text"
+				name="text"
+				placeholder="Take a note"
+				value={newNote.text}
+				autocomplete="false"
+			/>
 			<button onClick={addNote}>Add</button>
 		</form>
 	)
